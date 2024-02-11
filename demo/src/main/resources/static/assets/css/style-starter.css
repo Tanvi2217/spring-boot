@@ -1,0 +1,34 @@
+.fixed-top {
+  position: sticky;
+  top: 0;
+}
+
+.set-width {
+    width:50px;
+}
+
+.photo {
+    width:450px;
+}
+
+.banner {
+    width:300px;
+}
+.section1-width {
+    width:40%;
+}
+
+.section2-width {
+    width:50%;
+}
+
+.banner-style {
+   padding: 25px 30px;
+   border-radius: 50%;
+   height: 75px;
+}
+
+.admission-btn {
+    margin-top: 44px;
+    padding: 10px;
+}
