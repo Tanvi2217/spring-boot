@@ -1,0 +1,74 @@
+.fixed-top {
+  position: sticky;
+  top: 0;
+}
+
+.set-width {
+    width:50px;
+}
+
+.photo {
+    width:450px;
+}
+
+.banner {
+    width:300px;
+}
+.section1-width {
+    width:40%;
+}
+
+.section2-width {
+    width:50%;
+}
+
+.banner-style {
+   padding: 25px 30px;
+   border-radius: 50%;
+   height: 75px;
+}
+
+.admission-btn {
+    margin-top: 44px;
+    padding: 10px;
+}
+
+.footer-section1 {
+    width: 32%;
+}
+
+.footer-section2 {
+    width: 15%;
+}
+
+.footer-section3 {
+    width: 15%;
+}
+
+.footer-section4 {
+    width: 35%;
+}
+
+.breadcrumbs-custom-path {
+  text-align: center;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.w3l-breadcrumb {
+  display: block;
+  margin: 0 auto;
+  z-index: 100;
+  z-index: 99;
+}
+
+.about-image {
+    width: 65%;
+    margin-right: 4rem;
+}
+
+.input-form {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.875rem;
+}
