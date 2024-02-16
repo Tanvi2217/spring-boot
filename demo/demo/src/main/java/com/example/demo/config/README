@@ -1,0 +1,29 @@
+// Default config
+        // httpSecurity.authorizeHttpRequests(requests -> requests.anyRequest().authenticated());
+        //PermitAll
+        //httpSecurity.authorizeHttpRequests(requests -> requests.anyRequest().permitAll());
+        //DenyAll
+        //httpSecurity.authorizeHttpRequests(requests -> requests.anyRequest().denyAll());
+        //CUSTOMIZE THE PATHS WHICH HAVE PERMISSION AND WHICH DONOT.
+        //authorise() is used to apply login security to the page
+        //** means anything after / is acceptable
+//        httpSecurity.authorizeHttpRequests((requests) -> requests.requestMatchers("/", "/home").authenticated()
+//                .requestMatchers("/holidays/**").permitAll()
+//                .requestMatchers("/contact").permitAll()
+//                .requestMatchers("/saveMsg").permitAll()
+//                .requestMatchers("/courses").permitAll()
+//                .requestMatchers("/about").permitAll()
+//                .requestMatchers("/assets/**").permitAll())
+//                .formLogin(Customizer.withDefaults())
+//                .httpBasic(Customizer.withDefaults());
+        //DISABLE CSRF ATTACKS FOR NOW
+        httpSecurity.csrf((csrf) -> csrf.disable())
+                .authorizeHttpRequests((requests) -> requests.requestMatchers("/", "/home").authenticated()
+                        .requestMatchers("/holidays/**").permitAll()
+                        .requestMatchers("/contact").permitAll()
+                        .requestMatchers("/saveMsg").permitAll()
+                        .requestMatchers("/courses").permitAll()
+                        .requestMatchers("/about").permitAll()
+                        .requestMatchers("/assets/**").permitAll())
+                .formLogin(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults());
